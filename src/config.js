@@ -14,6 +14,6 @@ module.exports = {
   secret: _.defaultTo(process.env.SECRET, 'secret'),
   jwtSecret: _.defaultTo(process.env.JWT_SECRET, 'secret'),
   jwtOptions: {
-    expiresIn: '30m',
+    expiresIn: '30d',
   },
 };

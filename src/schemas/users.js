@@ -25,4 +25,13 @@ module.exports = {
       .max(10),
     password: yup.string().required(),
   }),
+
+  change: yup.object().shape({
+    email: yup
+      .string()
+      .email()
+      .required()
+      .lowercase(),
+    password: yup.string().required(),
+  }),
 };
